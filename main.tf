@@ -135,8 +135,8 @@ resource "aws_lb_listener" "http" {
 # 6. Launch Template
 resource "aws_launch_template" "web_lt" {
   name_prefix   = "web-template-"
-  image_id      = "ami-053b0d53c279acc90"
-  instance_type = "t2.micro"
+  image_id      = "ami-08e3b3155fc937a94"
+  instance_type = "t3.micro"
 
   network_interfaces {
     associate_public_ip_address = true
